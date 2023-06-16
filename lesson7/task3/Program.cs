@@ -26,7 +26,7 @@ void AverageArray(int [,] array)
             result += array[i, j];
             count++;
         }
-    System.Console.WriteLine($"array of a col {j+1} is {result/count}"); 
+    System.Console.WriteLine($"col {j+1} is {result/count}"); 
     }
     
 }
@@ -40,4 +40,5 @@ int[,] array = new int [rows,cols];
 
 FillArray(array);
 PrintArray(array);
+System.Console.WriteLine("Array of a: ");
 AverageArray(array);
